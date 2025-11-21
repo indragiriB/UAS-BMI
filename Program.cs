@@ -24,7 +24,7 @@ class Program
             Console.WriteLine("0. Keluar");
             Console.ResetColor();
             Console.Write("Pilih: ");
-            pilih = int.Parse(Console.ReadLine());
+            pilih = Convert.ToInt32(Console.ReadLine());
 
             switch (pilih)
             {
@@ -60,7 +60,7 @@ class Program
             Console.ResetColor();
 
             Console.Write("Pilih: ");
-            pilih = int.Parse(Console.ReadLine());
+            pilih = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear();
             switch (pilih)
@@ -103,7 +103,7 @@ class Program
             Console.ResetColor();
 
             Console.Write("Pilih: ");
-            pilih = int.Parse(Console.ReadLine());
+            pilih = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear();
             switch (pilih)
@@ -132,10 +132,10 @@ class Program
     static void HitungBMI()
     {
         Console.Write("Masukkan berat badan (kg): ");
-        double bb = double.Parse(Console.ReadLine());
+        double bb = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Masukkan tinggi badan (cm): ");
-        double tb = double.Parse(Console.ReadLine());
+        double tb = Convert.ToDouble(Console.ReadLine());
 
         double tinggiMeter = tb / 100.0;
         double bmi = bb / (tinggiMeter * tinggiMeter);
@@ -237,7 +237,7 @@ class Program
 
         LihatRiwayatBMI();
         Console.Write("\nPilih nomor yang ingin dihapus: ");
-        int idx = int.Parse(Console.ReadLine()) - 1;
+        int idx = Convert.ToInt32(Console.ReadLine()) - 1;
 
         if (idx < 0 || idx >= dataBMI.Count)
         {
@@ -325,7 +325,7 @@ class Program
 
         LihatRiwayatBMR();
         Console.Write("\nPilih nomor yang ingin diedit: ");
-        int idx = int.Parse(Console.ReadLine()) - 1;
+        int idx = Convert.ToInt32(Console.ReadLine()) - 1;
 
         if (idx < 0 || idx >= dataBMR.Count)
         {
@@ -334,7 +334,7 @@ class Program
         }
 
         Console.Write("Masukkan BMR baru: ");
-        double baru = double.Parse(Console.ReadLine());
+        double baru = Convert.ToDouble(Console.ReadLine());
 
         dataBMR[idx] = baru;
 
@@ -353,7 +353,7 @@ class Program
 
         LihatRiwayatBMR();
         Console.Write("\nPilih nomor yang ingin dihapus: ");
-        int idx = int.Parse(Console.ReadLine()) - 1;
+        int idx = Convert.ToInt32(Console.ReadLine()) - 1;
 
         if (idx < 0 || idx >= dataBMR.Count)
         {
