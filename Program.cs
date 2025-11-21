@@ -208,7 +208,7 @@ class Program
 
         LihatRiwayatBMI();
         Console.Write("\nPilih nomor data yang ingin diedit: ");
-        int idx = int.Parse(Console.ReadLine()) - 1;
+        int idx = Convert.ToInt32(Console.ReadLine()) - 1;
 
         if (idx < 0 || idx >= dataBMI.Count)
         {
@@ -217,7 +217,7 @@ class Program
         }
 
         Console.Write("Masukkan BMI baru: ");
-        double bmiBaru = double.Parse(Console.ReadLine());
+        double bmiBaru = Convert.ToDouble(Console.ReadLine());
 
         dataBMI[idx] = bmiBaru;
         kategoriBMI[idx] = HitungKategori(bmiBaru);
@@ -268,13 +268,13 @@ class Program
     static void HitungBMR()
     {
         Console.Write("Masukkan berat (kg): ");
-        double bb = double.Parse(Console.ReadLine());
+        double bb = Convert.ToInt32(Console.ReadLine());
 
         Console.Write("Masukkan tinggi (cm): ");
-        double tb = double.Parse(Console.ReadLine());
+        double tb = Convert.ToInt32(Console.ReadLine());
 
         Console.Write("Masukkan umur: ");
-        int umur = int.Parse(Console.ReadLine());
+        int umur = Convert.ToInt32(Console.ReadLine());
 
         Console.Write("Jenis kelamin (L/P): ");
         string jk = Console.ReadLine().ToUpper();
