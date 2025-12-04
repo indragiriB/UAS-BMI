@@ -95,3 +95,4 @@
 /home/inn/Documents/PD/UAS/obj/Debug/net9.0/UAS.pdb
 /home/inn/Documents/PD/UAS/obj/Debug/net9.0/UAS.genruntimeconfig.cache
 /home/inn/Documents/PD/UAS/obj/Debug/net9.0/ref/UAS.dll
+/home/inn/Documents/PD/UAS/obj/Debug/net9.0/UAS.sourcelink.json
