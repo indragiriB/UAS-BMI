@@ -226,8 +226,8 @@ class Program
         while (!validInput)
         {
             System.Console.Write($"Masukkan {nilai} ({nilaiUkur}): ");
-            if (double.TryParse(System.Console.ReadLine(), out input))
-            {
+            input = Convert.ToInt32(Console.ReadLine());
+        
                 if (input <= min || input > max)
                 {
                     TeksMerah($"{nilai} harus antara {min + 1} sampai {max} {nilaiUkur}!");
@@ -236,11 +236,6 @@ class Program
                 {
                     validInput = true;
                 }
-            }
-            else
-            {
-                TeksMerah("Input harus berupa Angka!");
-            }
         }
         return input;
     }
